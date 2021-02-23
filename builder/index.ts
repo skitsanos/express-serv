@@ -98,6 +98,7 @@ class Builder
                             const pathToHandle = temp.substring(0, temp.length - 1).replace(/\\/gi, '/');
 
                             const m = require(fullPath);
+                            console.log(m.default)
                             //parse path params
                             const pathParsed = pathToHandle.replace(/\$/gi, ':');
                             this.app[method](pathParsed, m.default);
