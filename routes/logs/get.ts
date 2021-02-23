@@ -4,17 +4,17 @@
  */
 
 const logOriginalUrl = (req, res, next) => {
-    console.log('Request URL:', req.originalUrl)
-    next()
-}
+    console.log('Request URL:', req.originalUrl);
+    next();
+};
 
 const logMethod = (req, res, next) => {
-    console.log('Request Type:', req.method)
-    next()
-}
+    console.log('Request Type:', req.method);
+    next();
+};
 
-const logStuff = [logOriginalUrl, logMethod]
+const logStuff = [logOriginalUrl, logMethod];
 
 export default [logStuff, (req, res, next) => {
-    res.send('User info')
-}]
+    res.send('User info');
+}];
