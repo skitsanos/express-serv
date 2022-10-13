@@ -15,7 +15,7 @@
     "config": "^3.3.3",
     "dayjs": "^1.10.4",
     "express": "^4.17.1",
-    "got": "^11.8.2",
+    "got": "^12.5.0",
     "winston": "^3.3.3"
   },
   "optionalDependencies": {
